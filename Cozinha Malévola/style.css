@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0f0f;
+    color: #e6e6e6;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+nav {
+    background: #161616;
+    padding: 20px 0;
+    border-bottom: 1px solid #5a0a14;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #b11226;
+    font-size: 22px;
+}
+
+.nav-links a {
+    color: #e6e6e6;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b11226;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    height: 90vh;
+    background:
+        linear-gradient(to bottom, rgba(0,0,0,0.50), #0f0f0f),
+        url('img/sukuna.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #b11226;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #aaaaaa;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #b11226;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #5a0a14;
+}
+
+/* SECTION */
+
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #b11226;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #161616;
+    padding: 25px;
+    border: 1px solid #830d1b;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #b11226;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* TRADIÇÃO */
+
+.tradicao {
+    background: #161616;
+}
+
+.tradicao-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tradicao-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.texto-principal {
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.texto-secundario {
+    color: #888888;
+}
+
+.tradicao-img {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.tradicao-img img {
+    width: 50%;
+    border: 1px solid #5a0a14;
+}
+
+/* FOOTER */
+
+footer {
+    background: #161616;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #5a0a14;
+    color: #aaaaaa;
+}
+
+/* NAV CONTAINER */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BOTÃO HAMBURGUER */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #e6e6e6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #161616;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        transform: translateY(-200%);
+        transition: 0.4s;
+        border-bottom: 1px solid #5a0a14;
+    }
+
+    .nav-links a {
+        margin: 15px 0;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+}
