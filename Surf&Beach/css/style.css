@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F3F3F5;
+}
+
 header {
     background-color: #2958E7;
     padding: 12px;
@@ -30,6 +36,10 @@ h1.logo {
     border-radius: 20px;
 }
 
+.login:hover {
+    background-color: #00ddff;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -44,4 +54,58 @@ h1.logo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.overlay {
+    background-color: #36477aa6;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1 {
+        position: relative;
+        z-index: 2;
+        font-size: 72px;
+        color: #ffffff;
+        font-weight: bold;
+}
+
+.overlay p {
+        position: relative;
+        z-index: 2;
+        font-size: 21px;
+        color: #E5E5E5;
+        max-width: 750px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 15px;
+}
+
+.container {
+    padding: 70px;
+    text-align: center;
+}
+
+.container p {
+    color: #7D7D7D;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.container h2 {
+    color: #1E4AC6;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.praia-card {
+    width: 90%;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,.3);
+    background: white;
 }
