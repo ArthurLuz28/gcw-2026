@@ -54,6 +54,41 @@ h1.logo {
     justify-content: center;
     align-items: center;
 }
+.equipamentos {
+    background-image: url("../img/onda.webp");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio-praia {
+    background-image: url("../img/praia1.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-diminuir{
+    height: 200px;
+    width: 400px;
+}
+.azulclaro{
+    color: #00D2F2;
+    font-weight: bold;
+    text-align: center;
+}
+.azulescuro{
+    color: #1E4AC6;
+    font-weight: bold;
+    text-align: center;
+}
 
 .overlay {
     background-color: #36477aa6;
@@ -83,6 +118,9 @@ h1.logo {
         font-weight: bold;
         margin-top: 15px;
 }
+.texto{
+    text-align: center;
+}
 
 .container {
     padding: 70px;
@@ -109,6 +147,7 @@ h1.logo {
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0,0,0,.3);
     background: white;
+    margin: 1%;
 }
 
 .container-praia {
