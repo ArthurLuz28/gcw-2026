@@ -233,7 +233,7 @@ h1.logo {
     color: #0f379c;
     margin: 0;
     font-weight: bold;
-    margin-left: 2px;
+    margin-left: 35px;
 }
 
 .info-data span {
@@ -271,25 +271,29 @@ h1.logo {
     background: #EEF7FC;
     border: 2px solid #D7EAF7;
     border-radius: 18px;
-    padding: 20px;
+    padding: 15px;
+    margin-right: 14%;
 }
 
 .previsao-box h5 {
-    margin: 0 0 15px 0;
+    margin: 0 0px 15px 20px;
     color: #245DF2;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .previsao-info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px;
+
 }
 
 .previsao-info span {
-    font-size: 18px;
+    font-size: 16px;
     color: #444444;
+    margin-left: 25px;
+    margin-right: 125px;
+    margin-bottom: 10px;
 }
 
 .nivel {
@@ -298,6 +302,7 @@ h1.logo {
     padding: 6px 18px;
     border-radius: 999px;
     font-weight: 600;
+    border: 1px solid #0a8f3d4f;
 }
 
 .vagas {
