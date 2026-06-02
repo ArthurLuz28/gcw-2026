@@ -73,7 +73,9 @@ main {
 .menu__link:hover {
   opacity: 1;
 }
-
+p {
+    margin-left: 5%;
+}
 .footer p {
   color: #fff;
   margin: 15px 0 10px 0;
@@ -206,13 +208,13 @@ h1.logo {
 }
 
 .img-diminuir{
-    height: 200px;
-    width: 400px;
+    height: 30%;
+    width: 60%;
 }
 .img-quadrado-pequeno{
     margin-left: 10%;
-    height: 200px;
-    width: 200px;
+    width: 20%;
+    float: right;
 }
 .baixoquadrado{
     margin-top: 5%;
@@ -263,6 +265,7 @@ h1.logo {
 }
 .texto{
     text-align: center;
+    margin-left: -5%;
 }
 
 .container {
@@ -304,7 +307,9 @@ h1.logo {
   width: 200px;
   margin: 0 auto;
 }
-
+.sobre{
+    margin-bottom: 10%;
+}
 .btn-mapa {
     background: #12B9E5;
     color: white;
