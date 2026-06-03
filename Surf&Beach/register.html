@@ -21,11 +21,39 @@
         </div>
 
         <div class="login-tabs">
-            <button class="tab active">Login</button>
-            <button class="tab" onclick="window.location.href='register.html'">Registrar</button>
+            <button class="tab" onclick="window.location.href='login.html'">Login</button>
+            <button class="tab active">Registrar</button>
         </div>
 
         <div class="login-form">
+
+            <label class="form-label">Foto de Perfil</label>
+
+            <div class="profile-upload">
+
+                <div class="profile-avatar">
+                    <img src="img/template-perfil.jpg" alt="Perfil">
+                </div>
+
+                <button type="button" class="upload-btn">
+                    <i data-lucide="upload"></i>
+                    Escolher Foto
+                </button>
+
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Nome de Exibição</label>
+
+                <div class="input-group-custom">
+                    <i data-lucide="user" class="input-icon"></i>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Como você quer ser chamado?">
+                </div>
+            </div>
 
             <div class="mb-4">
                 <label class="form-label">E-mail</label>
@@ -49,42 +77,18 @@
                     <input
                         type="password"
                         class="form-control"
-                        placeholder="••••••••">
+                        placeholder="Mínimo 6 caracteres">
                 </div>
             </div>
 
-            <div class="login-options">
-
-                <div class="remember">
-                    <input type="checkbox">
-                    <span>Lembrar de mim</span>
-                </div>
-
-                <a href="#">Esqueceu a senha?</a>
-
+            <div class="terms-box">
+                Ao criar uma conta, você concorda com nossos
+                Termos de Uso e Política de Privacidade.
             </div>
 
             <button class="btn-login">
-                Entrar
+                Criar Conta
             </button>
-
-            <div class="divider">
-                <span>ou continue com</span>
-            </div>
-
-            <div class="social-buttons">
-
-                <button class="social-btn">
-                    <i class="fa-brands fa-google"></i>
-                    Google
-                </button>
-
-                <button class="social-btn">
-                    <i class="fa-brands fa-facebook"></i>
-                    Facebook
-                </button>
-
-            </div>
 
         </div>
 

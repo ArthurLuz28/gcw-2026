@@ -23,22 +23,145 @@
                 <a class="nav-link" href="equipamentos.html">Equipamentos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="login.html"><button class="login">Login</button></a>
+                <a class="nav-link" href="login.html"><button class="login"><i data-lucide="log-in"></i>Login</button></a>
             </li>
         </ul>
     </header>
     <main>
-        <section class="equipamentos">
-            <div class="overlay">
+
+        <section class="hero-equipamentos">
+            <div class="hero-overlay">
                 <h1>Aluguel de Equipamentos</h1>
-                <p>Tudo que você precisa para aproveitar seu dia perfeito na praia</p>
+
+                <p>
+                    Encontre os melhores equipamentos para aproveitar
+                    sua experiência ao máximo.
+                </p>
             </div>
         </section>
-        
-    </main>
-    <footer>
 
+        <section class="filtros">
+
+            <span>Categorias:</span>
+
+            <button class="filtro-tag">Tudo</button>
+            <button class="filtro-tag">Surf</button>
+            <button class="filtro-tag">SUP</button>
+            <button class="filtro-tag">Praia</button>
+            <button class="filtro-tag ativo">Caiaque</button>
+            <button class="filtro-tag">Acessórios</button>
+
+        </section>
+
+        <section class="equipamentos-grid">
+
+            <article class="equipamento-card">
+                <img src="img/caiaque.jfif">
+
+                <div class="equipamento-info">
+
+                    <h3>Caiaque Duplo</h3>
+
+                    <span class="status">Disponível</span>
+
+                    <p>2 lugares para passeio tranquilo.</p>
+
+                    <div class="periodo">
+                        <button>Por Hora</button>
+                        <button class="ativo">Por Dia</button>
+                    </div>
+
+                    <div class="quantidade">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+
+                    <div class="preco">
+                        R$ 120,00
+                    </div>
+
+                    <button class="btn-alugar">
+                        Adicionar ao Carrinho
+                    </button>
+
+                </div>
+            </article>
+
+            <article class="equipamento-card">
+                <img src="img/caiaque.jfif">
+
+                <div class="equipamento-info">
+
+                    <h3>Caiaque Duplo</h3>
+
+                    <span class="status">Disponível</span>
+
+                    <p>2 lugares para passeio tranquilo.</p>
+
+                    <div class="periodo">
+                        <button>Por Hora</button>
+                        <button class="ativo">Por Dia</button>
+                    </div>
+
+                    <div class="quantidade">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+
+                    <div class="preco">
+                        R$ 120,00
+                    </div>
+
+                    <button class="btn-alugar">
+                        Adicionar ao Carrinho
+                    </button>
+
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="https://facebook.com/" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://linkedin.com" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://instagram.com" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="index.html">Início</a></li>
+        <li class="menu__item"><a class="menu__link" href="index.html#sobre">Sobre</a></li>
+        <li class="menu__item"><a class="menu__link" href="aulas.html">Aulas</a></li>
+        <li class="menu__item"><a class="menu__link" href="equipamentos.html">Equipamentos</a></li>
+
+        </ul>
+        <p>&copy;2026 Surf&Beach. Todos os direitos reservados.</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
