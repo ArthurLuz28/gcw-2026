@@ -190,6 +190,7 @@ h1.logo {
     justify-content: center;
     align-items: center;
 }
+
 .equipamentos {
     background-image: url("../img/onda.webp");
     height: 600px;
@@ -200,6 +201,7 @@ h1.logo {
     justify-content: center;
     align-items: center;
 }
+
 .inicio-praia {
     background-image: url("../img/praia1.jpg");
     height: 600px;
@@ -211,32 +213,26 @@ h1.logo {
     align-items: center;
 }
 
-.img-diminuir{
-    height: 300px;
-    width: 600px;
-}
-.img-quadrado-pequeno{
-    margin-left: 10%;
-    width: 20%;
-    float: right;
-}
-.baixoquadrado{
-    margin-top: 5%;
-    margin-bottom: 1%;
-}
-.cimaquadrado{
-    margin-bottom: 5%;
-}
+/* Estilos para a sessão sobre */
+
 .azulclaro{
     color: #00D2F2;
     font-weight: bold;
     text-align: center;
 }
+
 .azulescuro{
     color: #1E4AC6;
     font-weight: bold;
     text-align: center;
     margin-bottom: 2%;
+}
+
+.azulescuro-title {
+    color: #1E4AC6;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-left: 4%;
 }
 
 .overlay {
@@ -247,6 +243,191 @@ h1.logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.sobre {
+    padding: 50px 10%;
+    margin-bottom: 10%;
+}
+
+.sobre h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.sobre-imagens {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.coluna-direita {
+    margin-top: 50px; /* cria a escadinha */
+}
+
+.sobre-imagens img {
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.sobre-cards {
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.card-sobre {
+    width: 100px;
+    height: 100px;
+
+    background: #fff;
+
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.12);
+
+    transition: .3s;
+}
+
+.card-sobre:hover {
+    transform: translateY(-3px);
+}
+
+.card-sobre .icone {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-sobre p {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Estilos para a galeria de fotos do início */
+
+.galeria{
+    background-color: white;
+}
+
+.galeria > p {
+    text-align: center;
+    margin: 0 auto 30px auto;
+    max-width: 500px;
+}
+
+.galeria-card{
+    margin-bottom: 40px;
+    width: 95%;
+    margin: 0 auto 30px auto;
+}
+
+.galeria-card .carousel {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.galeria-card .carousel-item {
+    padding: 10px 50px;
+}
+
+.galeria-imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria-imagens img {
+    width: 280px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carousel-indicators {
+    margin-bottom: -1rem;
+}
+
+.carousel-indicators button {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+.azulbox{
+    margin-top: 18px;
+    background: #EEF7FC;
+    border: 1px solid #D7EAF7;
+    border-radius: 18px;
+    padding: 18px 22px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.vermelhobox{
+    margin-top: 18px;
+    background: #F4F0DF;
+    border: 1px solid #D7EAF7;
+    border-radius: 18px;
+    padding: 18px 22px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.img-diminuir {
+    width: 480px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Outros estilos */
+
+.container {
+    padding: 70px;
+    text-align: center;
 }
 
 .overlay h1 {
@@ -267,13 +448,9 @@ h1.logo {
         font-weight: bold;
         margin-top: 15px;
 }
-.texto{
-    text-align: center;
-    margin-left: -5%;
-}
 
-.container {
-    padding: 70px;
+.container-home {
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -356,15 +533,10 @@ h1.logo {
     width: 18px;
     height: 18px;
 }
-.galeria{
-    background-color: white;
-}
-.galeria-card{
-    order: 2px solid #dddddd;
-    border-radius: 20px;
-    padding: 25px;
-    margin: 30px;
-    transition: .3s;
+
+.praia-header a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .horario-card {
@@ -435,25 +607,6 @@ h1.logo {
     align-items: center;
     gap: 20px;
     margin-top: 18px;
-}
-
-.azulbox{
-    margin-top: 18px;
-    background: #EEF7FC;
-    border: 1px solid #D7EAF7;
-    border-radius: 18px;
-    padding: 18px 22px;
-    
-    box-sizing: border-box;
-}
-.vermelhobox{
-    margin-top: 18px;
-    background: #F4F0DF;
-    border: 1px solid #D7EAF7;
-    border-radius: 18px;
-    padding: 18px 22px;
-    
-    box-sizing: border-box;
 }
 
 .previsao-box {
